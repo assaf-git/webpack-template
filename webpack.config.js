@@ -20,11 +20,11 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
-      {
+      { // For images with local file path sources in HTML template
         test: /\.html$/i,
         loader: "html-loader",
       },
-      {
+      { // For images with local file path sources in JavaScript
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },      
